@@ -65,7 +65,8 @@
           * 在进入其他API接口之前必须先进行登录
           * token只应在当前网站打开时生效，所以token保存在sessionStorage中
           * */
-          window.sessionStorage.setItem('token', data.token)
+
+          window.sessionStorage.setItem('token', data.data.token)
           this.$router.push('/home')
         })
       }

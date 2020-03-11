@@ -9,8 +9,13 @@ import './assets/fonts/iconfont.css'
 import './assets/css/global.css'  //导入全局样式表
 
 axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
+axios.interceptors.request.use(config => {
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
 Vue.prototype.$http = axios
 Vue.prototype.$message = element.Message
+Vue.prototype.$confirm = element.MessageBox.confirm
 
 Vue.config.productionTip = false
 
