@@ -113,8 +113,6 @@
           <el-button @click="editDialogVisible = false">取 消</el-button>
           <el-button type="primary" @click="editUserInfo">确 定</el-button>
         </span>
-
-
       </el-dialog>
       <!--分配角色-->
       <el-dialog

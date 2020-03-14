@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import element from 'element-ui'
 import axios from 'axios'
+import treeTable from 'vue-table-with-tree-grid'
 
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/fonts/iconfont.css'
@@ -20,6 +21,7 @@ Vue.prototype.$confirm = element.MessageBox.confirm
 Vue.config.productionTip = false
 
 Vue.use(element)
+Vue.component('tree-table', treeTable)
 
 new Vue({
   router,
