@@ -206,6 +206,7 @@
           return this.$message.error('获取商品分类失败')
         }
         this.cateList = res.data
+        console.log(res);
       },
       handleChange() {
         this.getParamsData()
