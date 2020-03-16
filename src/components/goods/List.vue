@@ -27,12 +27,12 @@
         <el-table-column label="商品重量" width="100px" prop="goods_weight"></el-table-column>
         <el-table-column label="创建事件" width="300px" prop="add_time">
           <template slot-scope="scope">
-            {{scope.row.add_time | dataFormat}}
+            {{scope.row.add_time | dateFormat}}
           </template>
         </el-table-column>
         <el-table-column label="操作" width="200px">
           <template slot-scope="scope">
-            <el-button sizi="mini" type="primary" icon="el-icon-edit"></el-button>
+            <el-button sizi="mini" type="primary" icon="el-icon-edit" ></el-button>
             <el-button sizi="mini" type="danger" icon="el-icon-delete" @click="removeById(scope.row.goods_id)"></el-button>
           </template>
         </el-table-column>

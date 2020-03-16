@@ -26,7 +26,7 @@ Vue.prototype.$confirm = element.MessageBox.confirm
 
 Vue.config.productionTip = false
 
-Vue.filter('dataFormat',function(originVal){
+Vue.filter('dateFormat',function(originVal){
   const dt = new Date(originVal)
   const y = dt.getFullYear()
   const m = (dt.getMonth() + 1 + '').padStart(2,'0')
